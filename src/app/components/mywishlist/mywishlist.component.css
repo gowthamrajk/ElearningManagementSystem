@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Merienda+One&family=Staatliches&display=swap');
+
+.row
+  {
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+  #bloodCards
+  {
+    margin-right: 5%;
+    margin-bottom: 4%;
+    width: 40%;
+    border-radius: 15px;
+    padding: 0px;
+    transition: transform .2s;
+    box-shadow: 5px 5px 25px 8px rgb(147, 158, 147);
+  }
+  #bloodCards:hover
+  {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+.card-block
+{
+  margin-top: -33%;
+  margin-left: 40%;
+  margin-bottom: 6%;
+}
+.text{
+  font-family: serif;
+  font-size: larger;
+  font-weight: bolder;
+}
+#searchtxt
+{
+  width: 20%;
+  float: right;
+}
+.img-block{
+    width: 40%;
+    height: 180px;
+    border-radius: 15px;
+    background-color: white;
+}
+.circle{
+    background-color: rgb(243, 233, 97);
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-top: 42%;
+    margin-bottom: auto;
+    border-radius: 50%;
+    width: 75%;
+    height: 78%;
+}
+.bloodimg
+{
+    margin-left: 0%;
+    margin-top: 0%;
+}
+.heading-text
+{
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 1%;
+    color: darkgreen;
+    font-family: 'Aladin', cursive;
+    letter-spacing: 1px;
+    margin-left: 41%;
+}
+.btn-primary
+{
+   background-color: rgb(17, 93, 95);
+   border-radius: 10px;
+   font-weight: bold;
+}
+.btn-primary:hover
+{
+   background-color: rgb(9, 40, 41);
+   cursor: pointer;
+}

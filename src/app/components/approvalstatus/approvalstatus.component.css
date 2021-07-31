@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+.panel-body{
+  margin-left: 1%;
+  margin-right: 2%;
+}
+thead{
+  background-color: rgb(85, 14, 14);
+  padding: 10px 5px 10px 5px;
+}
+table, td{
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+table, td, tr{
+  border: 1px solid rgb(163, 161, 161);
+  font-family: serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: large;
+}
+
+th{
+  text-transform: uppercase;
+  color: white;
+  font-family: Helvetica;
+  font-style: italic;
+  font-size: normal;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid white;
+}
+td{
+  text-transform:none;
+  padding: 10px;
+}
+.accepted{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(30, 116, 30);
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-weight: bolder;
+}
+.pending{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(196, 137, 28);
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-weight: bolder;
+}
+.rejected{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: red;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-weight: bolder;
+}
+.date-cover
+{
+  border-radius: 10px;
+  background-color: rgb(14, 9, 58);
+  padding: 5px 10px 5px 10px;
+  color: white;
+  width: auto;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.headercolor
+{
+  background-color: rgb(3, 70, 3);
+}

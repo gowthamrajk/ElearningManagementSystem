@@ -1,0 +1,33 @@
+.headtext
+{
+   margin-bottom: 3%; 
+   font-weight: bolder; 
+   color: darkgreen;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 25px;
+}
+.btn-primary
+{
+   background-color: rgb(17, 93, 95);
+   border-radius: 10px;
+   font-weight: bold;
+}
+.btn-primary:hover
+{
+   background-color: rgb(9, 40, 41);
+   cursor: pointer;
+}
+.btn-secondary{
+   border-radius: 10px;
+   background-color: rgb(30, 116, 30);
+   font-weight: bold;
+   cursor: context-menu;
+ }
+ a{
+    text-decoration: none;
+ }
+ #enrollsuccessbtn:hover
+ {
+   color: rgb(9, 40, 41);
+   background-color: white;
+ }

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Merienda+One&family=Staatliches&display=swap');
+
+.register{
+    background: white;
+    margin-top: 0.8%;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    padding: 3%;
+}
+.register-right{
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 35px 8px rgb(147, 158, 147); 
+    margin-left: auto;
+    margin-right: auto;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-right: 34%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1%;
+    border: 1px solid #440707;
+    color: #440707;
+    font-weight: 600;
+    font-size: 20px;
+    width: 30%;
+    cursor: pointer;
+}
+.loginbtn
+{
+    float: right;
+    margin-top: 10%;
+    margin-right: 25%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: transparent;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 50%;
+    cursor: pointer;
+}
+.loginbtn:hover{
+    cursor: pointer;
+    background: #ffffff;
+    color: #0a3d3b;
+}
+.btnRegister:hover{
+    background: #440707;
+    color: #fff;
+    cursor: pointer;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    margin-bottom: -15%;
+    font-family: 'Aladin', cursive;
+    color: #413613;
+}
+#home-tab
+{
+    background-color: none;
+}
+input
+{
+    border-radius: 10px;
+}
+.form-group
+{
+    margin-bottom: 4%;
+}
+input{
+  border-radius: 12px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+.textual
+{
+  color: maroon; 
+  text-align: center; 
+  margin-top: 2%;
+  font-family: 'Aladin', sans-serif;
+  padding: 5px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+label{
+  margin-top: 8px;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.registerbtn
+{
+  background-color: transparent;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin: auto;  
+  padding-bottom: 7px;
+  border-radius: 15px;
+  margin-top: -7%;
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 1px solid black;
+}
+.registerbtn:hover
+{
+  background-color: rgb(23, 78, 78);
+  padding-left: 7%;
+  padding-right: 7%;
+  cursor: pointer;
+  color: white;
+}
+#bloodCards
+{
+  margin-right: 5%;
+  margin-bottom: 15%;
+  width: 55%;
+  border-radius: 10px;
+  transition: transform .2s;
+  padding-left: 2%;
+  box-shadow: 5px 5px 25px 8px rgb(147, 158, 147);
+}
+#bloodCards:hover
+{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.bloodimg
+{
+  float: right;
+  margin-top: 3%;
+  margin-right: 3%;
+}
+.card-block
+{
+margin-top: 3%;
+margin-bottom: 3%;
+}
+.text{
+font-family: verdana;
+font-size: medium;
+font-weight: 400; 
+margin-top: 1.5%;
+}
+.editbtn
+{
+border: none;
+border-radius: 15px;
+color: white;
+padding: 5px 20px 5px 20px;
+margin-top: 5%;
+margin-bottom: 1%;
+background-color: #13534e;
+}
+.editbtn:hover{
+cursor: pointer;
+}
+
+.btndiv{
+margin-left: 40%;
+align-content: center;
+}
+#profilecard
+{
+  margin-left: 30%;
+  margin-top: 5%;
+}

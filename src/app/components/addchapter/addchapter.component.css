@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+.container
+{
+    max-width: 700px;
+    padding: 40px 40px 25px 40px;
+    border-radius: 10px; 
+    box-shadow: 5px 5px 35px 8px rgb(147, 158, 147); 
+    background-color: white;
+    margin-top: 2%;
+    margin-bottom: 50px;
+}
+input{
+    border-radius: 12px;
+    margin-top: 8px;
+}
+.textual
+{
+    color: rgb(77, 72, 14); 
+    text-align: center; 
+    margin-top: -20px;
+    font-family: 'Aladin', cursive;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+label{
+    margin-top: 10px;
+    font-family: 'Volkhov', serif;
+    letter-spacing: 0px;
+    font-size: medium;
+}
+.registerbtn
+{
+    background-color: transparent;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin: auto;  
+    padding-bottom: 7px;
+    border-radius: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 1px solid black;
+}
+.registerbtn:hover
+{
+    background-color: rgb(23, 78, 78);
+    padding-left: 7%;
+    padding-right: 7%;
+    cursor: pointer;
+    color: white;
+}

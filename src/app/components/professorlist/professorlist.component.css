@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Merienda+One&family=Staatliches&display=swap');
+
+.row
+  {
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+  #bloodCards
+  {
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    padding: 0px;
+    width: 40%;
+    height: 60%;
+    transition: transform .2s;
+    box-shadow: 5px 5px 25px 8px rgb(147, 158, 147);
+  }
+  #bloodCards:hover
+  {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+.card-block
+{
+  margin-top: 2%;
+  margin-left: 10%;
+}
+.text{
+  font-family: serif;
+  font-size: larger;
+  font-weight: bolder;
+  margin-bottom: 1%;
+}
+#searchtxt
+{
+  width: 20%;
+  float: right;
+}
+.img-block
+{
+    width: 100.5%;
+    height: 180px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(17, 90, 85);
+}
+.circle{
+    background-color: rgb(253, 255, 138);
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-top: 5%;
+    margin-bottom: auto;
+    border-radius: 50%;
+    width: 40%;
+    height: 80%;
+}
+.bloodimg
+{
+    margin-left: 17%;
+    margin-top: 3%;
+}
+.status-btn
+{
+    padding: 4px 30px 5px 30px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    width: 240px;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-left: 15%;
+    margin-bottom: 4%;
+}
+.status-btn1
+{
+    background-color: rgb(199, 93, 32);
+    padding: 4px 30px 5px 30px;
+    color: white;
+    vertical-align: middle;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-left: 20%;
+    margin-bottom: 4%;
+}
+.status-btn2
+{
+    background-color: rgb(187, 40, 40);
+    padding: 4px 30px 5px 30px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 15px;
+    width: 200px;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-left: 20%;
+    margin-bottom: 4%;
+}
+.heading-text
+{
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 2%;
+    color: darkgreen;
+    font-family: 'Aladin', cursive;
+    letter-spacing: 1px;
+    margin-left: 42%;
+}
+.subheading-text
+{
+    font-weight: bolder;
+    font-size: 25px;
+    color: green;
+    font-family: 'Aladin', cursive;
+    letter-spacing: 1px;
+    margin-left: 35%;
+    margin-bottom: 1%;
+}
+.date-cover{
+  border-radius: 10px;
+  background-color: rgb(10, 15, 68);
+  padding: 5px 10px 5px 10px;
+  color: white;
+  width: 30%;
+  font-weight: bolder;
+}
+.slotcover
+{
+  border-radius: 10px;
+  background-color: rgb(128, 44, 18);
+  padding: 5px 10px 5px 10px;
+  color: white;
+  width: 30%;
+  font-weight: bolder;
+}

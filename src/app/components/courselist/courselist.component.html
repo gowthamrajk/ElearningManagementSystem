@@ -1,0 +1,123 @@
+<app-header></app-header>
+
+<div id="youtubecoursecard" style="margin-left: 10%; margin-right: 10%; margin-top: 5%;">
+  <div class="headtext">Courses with Youtube Videos</div>
+<owl-carousel-o  [options]="owlOptions" (dragging)="owlDragging($event)">
+  <ng-container>
+    <ng-container *ngFor="let data of youtubecourselist | async">
+      <ng-template  carouselSlide class="card" style="width: 25rem;">
+        <!--<iframe width="100%" ng-src="getSafeUrl(data.youtubeurl)" frameborder="0 " allowfullscreen></iframe>-->
+        <!--<embed height="250" width="250" [src]="data.youtubeurl">-->
+          <youtube-player style="margin-right: 5%;" [videoId]="data.youtubeurl" suggestedQuality="highres" [height]="180" [width]="300"></youtube-player>
+          <div class="card-body" id="youtubecard" (click)="getcoursedetails(data.coursename)" style="box-shadow: 2px 2px 15px 8px rgb(147, 158, 147); margin-right: 5%; margin-bottom: 10%; width: 300px; background-color: white;">
+          <h4 class="card-title text-center" style="margin-bottom: 4%;"><b>{{data.coursename}}</b></h4>
+          <h6 class="text-center" style="margin-left: auto; margin-right: auto; padding: 5px 10px 5px 10px; background-color: darkgoldenrod; border-radius: 5px; font-weight: bold; width: 55%; color: white;">{{data.courseid}}</h6>
+          <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Instructor: </b><b>{{data.instructorname}}</b></div>
+          <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Learners: </b><b>{{data.enrolledcount}} enrolled previously</b></div>
+          <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Level: </b><b>{{data.skilllevel}}</b></div>
+          <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Language: </b><b>{{data.language}}</b></div>
+          <p class="card-text"><br><b style="color: darkblue; font-size: large; margin-bottom: 1%;">{{data.description}}</b></p>
+          <!--<a [href]="data.youtubeurl" style="margin-right: 8%; margin-left: 4%" class="btn btn-primary">Enroll Now</a>-->
+          <a (click)="getcoursedetails(data.coursename)" style="margin-left: auto; margin-right: auto; border: none;" class="btn btn-primary">More Info</a>
+        </div>
+      </ng-template>
+      <!--<ng-template carouselSlide [id]="data.id">
+        <img [src]="data.src" [alt]="data.alt" [title]="data.title">
+      </ng-template>-->
+    </ng-container>
+  </ng-container>
+</owl-carousel-o>
+</div>
+
+<div id="websitecoursecard" style="margin-left: 10%; margin-right: 10%; margin-top: 5%;">
+  <div class="headtext">Courses with Website Content</div>
+<owl-carousel-o [options]="owlOptions" (dragging)="owlDragging($event)">
+  <ng-container>
+    <ng-container *ngFor="let data of websitecourselist | async">
+      <ng-template carouselSlide class="card" style="width: 18rem;">
+        <div class="card-body" id="websitecard" (click)="getcoursedetails(data.coursename)" style="box-shadow: 2px 2px 15px 8px rgb(147, 158, 147); margin-right: 5%; margin-bottom: 10%; width: 300px; background-color: white;">
+          <img class="card-img-top" [src]="data.websiteurl" [alt]="data.courseid">
+          <hr>
+          <h4 class="card-title text-center" style="margin-bottom: 4%;"><b>{{data.coursename}}</b></h4>
+          <h6 class="text-center" style="margin-left: auto; margin-right: auto; padding: 5px 10px 5px 10px; background-color: darkgoldenrod; border-radius: 5px; font-weight: bold; width: 55%; color: white;">{{data.courseid}}</h6>
+          <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Instructor: </b><b>{{data.instructorname}}</b></div>
+          <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Learners: </b><b>{{data.enrolledcount}} enrolled previously</b></div>
+          <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Level: </b><b>{{data.skilllevel}}</b></div>
+          <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Language: </b><b>{{data.language}}</b></div>
+          <p class="card-text"><br><b style="color: darkblue; font-size: large; margin-bottom: 1%;">{{data.description}}</b></p>
+          <!--<a [href]="data.websiteurl" style="margin-right: 8%; margin-left: 4%" class="btn btn-primary">Enroll Now</a>-->
+          <a (click)="getcoursedetails(data.coursename)" style="margin-left: auto; margin-right: auto; border: none;" class="btn btn-primary">More Info</a>
+        </div>
+      </ng-template>
+      <!--<ng-template carouselSlide [id]="data.id">
+        <img [src]="data.src" [alt]="data.alt" [title]="data.title">
+      </ng-template>-->
+    </ng-container>
+  </ng-container>
+</owl-carousel-o>
+</div>
+
+<div id="coursedetailscard" style="margin-left: 30%; margin-top: 5%;" *ngFor="let data of courselist | async">
+  <div class="card-body" style="box-shadow: 2px 2px 15px 8px rgb(147, 158, 147); margin-right: 5%; margin-bottom: 10%; padding-left: 3%; width: 520px; border-radius: 10px; background-color: white;">
+    <h4 class="card-title text-center" style="margin-bottom: 4%;"><b style="font-size: 30px;">{{data.coursename}}</b></h4>
+    <h6 class="text-center" style="margin-left: auto; margin-right: auto; padding: 5px 10px 5px 10px; background-color: darkgoldenrod; border-radius: 5px; font-weight: bold; margin-bottom: 4%; width: 40%; color: white;">{{data.courseid}}</h6>
+    <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Instructor Name : </b><b style="margin-left: 14%">{{data.instructorname}}</b></div>
+    <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Instructor Institution : </b><b style="margin-left: 6%">{{data.instructorinstitution}}</b></div>
+    <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Enrolled Date : </b><b style="margin-left: 19%">{{data.enrolleddate}}</b></div>
+    <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Learners : </b><b style="margin-left: 28%">{{data.enrolledcount}} learners enrolled previously</b></div>
+    <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Course Type : </b><b style="margin-left: 21.5%">{{data.coursetype}} contents</b></div>
+    <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Level : </b><b style="margin-left: 34%">{{data.skilllevel}}</b></div>
+    <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Language : </b><b style="margin-left: 26%">{{data.language}}</b></div>
+    <p class="card-text"><br><b style="color: darkblue; font-size: large; margin-bottom: 1%;">{{data.description}}</b></p>
+    <div *ngFor="let status of enrollmentstatus | async">
+      <div *ngIf="status === 'notenrolled'" >
+        <a (click)="enrollcourse(data,loggedUser,currRole)" id="enrollbtn" value="Accept" style="margin-right: 8%; margin-left: 3%" class="btn btn-primary">Enroll Now</a>
+        <a id="enrolledbtn" class="btn btn-secondary" style="display: none; margin-right: 8%; margin-left: 7%;">Enrolled</a>
+      </div>
+      <div *ngIf="status === 'enrolled'" >
+        <a style="margin-right: 8%; margin-left: 7%;" class="btn btn-secondary">Enrolled</a>
+      </div>
+    </div>
+    <div style="margin-top: -7.5%; margin-left: 28%;">
+      <!--<a (click)="enrollcourse(data,loggedUser,currRole)" style="margin-right: 8%; margin-left: 8%" class="btn btn-primary">Enroll Now</a>-->
+      <a (click)="visitCourse(data.coursename)" style="margin-right: 2%; border: none;" class="btn btn-primary">Visit Course</a>
+      <a id="courselistbtn" (click)="backToCourseList()" style="border: none; margin-right: 2%;" class="btn btn-primary">Courselist</a>
+    </div>
+    <div *ngFor="let status of wishliststatus | async">
+      <div style="margin-top: -7.5%; margin-left: 76%;" *ngIf="status === 'notliked'" >
+        <a id="wishlistbtn" (click)="addToWishList(data,loggedUser,currRole)" style="border: none; background-color: transparent; outline: none; font-weight: bolder; border: none;"><i class="fa fa-heart-o fa-2x" style="color: red;"></i><b style="font-size: larger;"> Like</b></a>
+        <a id="likedbtn" style="display: none; margin-right: 8%; margin-left: 6%; font-weight: bolder; background-color: transparent; outline: none; border: none;"><i class="fa fa-heart fa-2x" style="color: red;"></i><b style="font-size: larger;"> Fav</b></a>
+      </div>
+      <div style="margin-top: -7.5%; margin-left: 76%;" *ngIf="status === 'liked'" >
+        <a style="margin-right: 8%; font-weight: bolder; background-color: transparent; outline: none; border: none;"><i class="fa fa-heart fa-2x" style="color: red;"></i><b style="font-size: larger;"> Fav</b></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="enrollsuccess" style="margin-left: 5%; margin-top: 3%;">
+  <div class="card-body" style="box-shadow: 2px 2px 15px 8px rgb(147, 158, 147); margin-right: 5%; margin-bottom: 10%; padding: 25px; height: 550px; width: 95%; border-radius: 10px; background-color: white;">
+    <div style="width: 100%; height: 135px; border-radius: 10px; background-color: rgb(103, 219, 219); padding: 20px;">
+      <div class="rounded-circle" style="background-color: rgb(7, 43, 43); height: 34%; width: 3.5%; align-content: center;"><i style="font-weight: bolder; margin-left: 10px; margin-top: 7px; color: white; font-size: large;" class="fa fa-check"></i></div>
+      <div style="color: black; font-weight: bolder; font-size: 25px; margin-top: -3.6%; margin-left: 5%;">Great choice, {{loggedUser}}!</div>
+      <button style="background-color: rgb(7, 43, 43); margin-left: 5%; margin-top: 15px; padding: 10px; border-radius: 10px; border: none; outline: none;"><i style="font-weight: bolder; margin-left: 10px; margin-top: 6px; color: white; font-size: large;" class="fa fa-share"></i><b style="font-weight: bold; color: white;"> Share this course</b></button>
+    </div>
+    <br>
+    <div style="font-weight: bold; color: black; font-size: 20px;">Jump right into the course</div><br>
+    <div style="background-color: rgb(29, 28, 28); border-radius: 10px; height: 260px; color: white; padding: 30px;">
+      <youtube-player style="margin-right: 5%;" [videoId]="enrolledURL" suggestedQuality="highres" [height]="200" [width]="400"></youtube-player>
+      <div style="margin-top: -18%; margin-left: 45%;">
+        <h4 class="card-title text-left" style="margin-bottom: 2%;"><b style="font-size: 30px;">{{enrolledName}}</b></h4>
+        <h6 class="text-center" style="padding: 5px 10px 5px 10px; background-color: darkgoldenrod; border-radius: 5px; font-weight: bold; margin-bottom: 2%; width: 35%; color: white;">{{enrolledID}}</h6>
+        <div><b style="color: white; font-size: large; margin-bottom: 4%;">Instructed By : </b><b> {{enrolledInstructorName}}</b></div>
+        <div style="margin-top: 4%;">
+          <a style="margin-right: 8%; border: none;" id="enrollsuccessbtn" class="btn btn-primary">Visit Course</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<app-footer></app-footer>

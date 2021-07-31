@@ -1,0 +1,70 @@
+.continer
+{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 35px 8px darkgray;
+    margin: 3% 5% 3% 5%;
+    padding: 3%;
+}
+.chapter-list
+{
+    margin-top: -36%;
+    float: right;
+    overflow-y: scroll;
+    padding: 2%;
+    box-shadow: 4px 4px 25px 8px darkgray;
+    background-color: white;
+    width: 36%;
+    height: 380px;
+}
+.chapter-list::-webkit-scrollbar {
+    width: 8px;
+  }
+.chapter-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+.chapter-list::-webkit-scrollbar-thumb {
+    background: rgb(6, 122, 117);
+  }
+.chapter-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(3, 54, 52);
+  }
+#select-box
+{
+    width: 25px; 
+    height: 25px; 
+    align-items: center;
+    border: 1px solid black;
+    align-content: center;
+    cursor: pointer;
+    padding: 2px;
+    vertical-align: middle;
+    border-radius: 5px; 
+    background-color: white;
+}
+.selected
+{
+    background-color: #e1e3e2;
+}
+.name
+{
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: -8.5%;
+    cursor: pointer;
+    margin-left: 12%;
+    color: rgb(6, 54, 47);
+    font-family: 'Segoe UI', sans-serif;
+}
+.chapter1, .chapter2, .chapter3, .chapter4, .chapter5, .chapter6, .chapter7, .chapter8    
+{
+    padding: 3%;
+}
+.fa-check
+{
+    font-weight: bolder;
+    color: white;
+    vertical-align: middle;
+    font-size: large;
+    display: flex;
+}

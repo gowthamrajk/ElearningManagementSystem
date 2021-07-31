@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<div *ngIf="currRole === 'user'" class="heading-text" style="color: darkgreen;"><b><i style="color: darkred;" class="fa fa-heart"></i> User WishList</b></div>
+<div *ngIf="currRole === 'professor'" class="heading-text" style="color: darkgreen;"><b><i style="color: darkred;" class="fa fa-heart"></i> Professor WishList</b></div>
+<div class="row">
+    <div  *ngFor="let course of wishlist | async" class="col-4 card" id="bloodCards">
+        <div class="img-block">
+            <div class="circle">
+                <img *ngIf="course.coursetype === 'Youtube'" class="bloodimg" [src]="'assets/img/youtube.png'" width="140" height="140">
+                <img *ngIf="course.coursetype === 'Website'" class="bloodimg" [src]="'assets/img/website.png'" width="100" height="120">
+            </div>
+        </div>
+        <div class="card-block">
+            <div class="text"><b style="color: darkred; font-size: large;">Course :</b> {{course.coursename}}</div>
+            <div class="text"><b style="color: darkred; font-size: large;">Course ID :</b> <small style=" margin-left: 3%; padding: 3px 8px 3px 8px; background-color: rgb(87, 64, 8); border-radius: 10px; font-weight: bold; width: 55%; color: white;">{{course.courseid}}</small></div>
+            <div class="text"><b style="color: darkred; font-size: large;">Instructor :</b> {{course.instructorname}}</div>
+            <div class="text"><b style="color: darkred; font-size: large;">Learners :</b> {{course.enrolledcount}} enrolled already</div>
+            <div class="text"><b style="color: darkred; font-size: large;">Type :</b> {{course.coursetype}} Tutorials</div>
+            <div class="text"><b style="color: darkred; font-size: large;">Level :</b> {{course.skilllevel}}</div>
+            <div class="text"><b style="color: darkred; font-size: large;">Language :</b> {{course.language}}</div>
+            <a (click)="visitCourse(course.coursename)" style="margin-top: 5%; border: none;" id="enrollsuccessbtn" class="btn btn-primary">Visit Course</a>
+        </div>
+    </div>
+  </div>
+
+<br><br><br>
+<app-footer></app-footer>

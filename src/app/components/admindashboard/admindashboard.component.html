@@ -1,0 +1,80 @@
+<app-header></app-header>
+
+<div class="sidebar-container">
+    <ul class="sidebar-navigation">
+      
+        <div class="card" style="width:235px; background-color: #cc4f4f;">
+            <div id="userimg" style="width:150px;">
+            <img [src]="'assets/img/admin.png'" alt="Card image" style="width:100%">
+            </div>
+            <div style="margin-left: auto; margin-right: auto;"  class="card-body">
+              <h4 style="font-weight: bolder;" class="card-title"><b>{{name}}</b></h4>
+            </div>
+          </div>
+      
+      <li>
+         <i class="fa fa-plus" aria-hidden="true"></i> <label [routerLink]="['/addProfessor']" style="cursor: pointer;">Add Professor</label>
+      </li>
+      <li>
+        <i class="fa fa-cart-plus" aria-hidden="true"></i> <label [routerLink]="['/addCourse']" style="cursor: pointer;">Add Course</label>
+     </li>
+     <li>
+      <i class="fa fa-book" aria-hidden="true"></i> <label [routerLink]="['/addchapter']" style="cursor: pointer;">Add Chapters</label>
+     </li>
+      <li>
+        <i class="fa fa-check-square" aria-hidden="true"></i> <label [routerLink]="['/approveprofessor']" style="cursor: pointer;">Approve Professor</label>
+      </li>
+      <li>
+        <i class="fa fa-list" aria-hidden="true"></i> <label [routerLink]="['/courselist']" style="cursor: pointer;">Course List</label>
+      </li>
+      <li>
+        <i class="fa fa-heart" aria-hidden="true"></i> <label [routerLink]="['/mywishlist']" style="cursor: pointer;">WishList</label>
+      </li>
+      <li>
+        <i class="fa fa-user-o" aria-hidden="true"></i> <label [routerLink]="['/professorlist']" style="cursor: pointer;">Professors</label> 
+      </li>
+      <li>
+        <i class="fa fa-user" aria-hidden="true"></i> <label [routerLink]="['/userlist']" style="cursor: pointer;">Users</label>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div style="color: maroon; font-weight: bolder; font-family: aladin; letter-spacing: 1px; font-size: 40px; margin: 0% 0% 1% 0%;"><b>Welcome to Admin Dashboard - Elearning Management System </b></div>
+      <div style="color: darkgreen; font-weight: bold; font-size: 22px; margin: 0% 0% 2% 29%;"><b>[Author - GowthamRaj K]</b></div>
+      <div class="dashboard-card" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
+          <div class="circle"><i id="icons" style="margin-left: 30px;" class="fa fa-user"></i></div>
+          <div class="text">Users</div>
+          <div class="sub-text" *ngFor="let user of users | async">{{user}} users registered</div>
+        </div>
+        <div class="dashboard-card" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
+          <div class="circle"><i id="icons" style="margin-left: 25px;" class="fa fa-user-o"></i></div>
+          <div class="text" >Professors</div>
+          <div class="sub-text" *ngFor="let professor of professors | async">{{professor}} Professors currently teaching the learners</div>
+        </div>
+        <div class="dashboard-card"style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
+          <div class="circle"><i id="icons" style="margin-left: 25px;" class="fa fa-trophy"></i></div>
+          <div class="text">Courses</div>
+          <div class="sub-text" *ngFor="let course of courses | async">{{course}} courses available</div>
+        </div>
+        <div class="dashboard-card" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
+          <div class="circle"><i id="icons" style="margin-left: 15px;" class="fa fa-graduation-cap"></i></div>
+          <div class="text">Leaners</div>
+          <div class="sub-text" *ngFor="let count of enrollmentcount | async">{{count}} enrollments have been made by <b *ngFor="let enrollment of enrollments | async">{{enrollment}}</b> Learners</div>
+        </div>
+        <div class="dashboard-card" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
+          <div class="circle"><i id="icons" style="margin-left: 20px;" class="fa fa-list"></i></div>
+          <div class="text">Chapters</div>
+          <div class="sub-text" *ngFor="let chapter of chapters | async">{{chapter}} courses are with its <br>detailed chapters</div>
+        </div>
+        <div class="dashboard-card" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
+          <div class="circle"><i id="icons" style="margin-left: 20px;" class="fa fa-heart"></i></div>
+          <div class="text">Favourites</div>
+          <div class="sub-text" *ngFor="let wishlists of wishlist | async">{{wishlists}} courses are loved by most of the Leaners </div>
+        </div>      
+    </div>
+  </div>
+
+<br><br><br><br>
+<app-footer></app-footer>

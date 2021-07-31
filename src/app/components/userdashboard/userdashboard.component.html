@@ -1,0 +1,101 @@
+<app-header></app-header>
+
+<div class="sidebar">
+    <div class="logo-details">
+      <i class='fa fa-bars'></i>
+        <div class="logo_name"><img [src]="'assets/img/male.png'" width="55" height="50"> USER </div>
+        <i class='fa' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li [routerLink]="['/edituserprofile']">
+        <a>
+          <i class='fa fa-edit'></i>
+          <span class="links_name">Edit Profile</span>
+        </a>
+         <span class="tooltip">Edit Profile</span>
+      </li>
+      <li [routerLink]="['/courselist']">
+       <a>
+         <i class='fa fa-trophy' ></i>
+         <span class="links_name">Start Learning</span>
+       </a>
+       <span class="tooltip">Start Learning</span>
+     </li>
+     <li [routerLink]="['/mycourses']">
+        <a>
+          <i class='fa fa-graduation-cap' ></i>
+          <span class="links_name">My Learning</span>
+        </a>
+        <span class="tooltip">My Learning</span>
+      </li>
+      <li [routerLink]="['/mywishlist']">
+        <a>
+          <i class='fa fa-heart' ></i>
+          <span class="links_name">My Wishlist</span>
+        </a>
+        <span class="tooltip">My Wishlist</span>
+      </li>
+     <li [routerLink]="['/courselist']">
+       <a>
+         <i class='fa fa-list' ></i>
+         <span class="links_name">Courses</span>
+       </a>
+       <span class="tooltip">Courses</span>
+     </li>
+     <li [routerLink]="['/professorlist']">
+       <a>
+         <i class='fa fa-user-o' ></i>
+         <span class="links_name">Professors</span>
+       </a>
+       <span class="tooltip">Professors</span>
+     </li>
+     <li [routerLink]="['/userlist']">
+       <a>
+         <i class='fa fa-user' ></i>
+         <span class="links_name">Users</span>
+       </a>
+       <span class="tooltip">Users</span>
+     </li>
+     <li style="align-content: center;" class="profile">
+         <div class="profile-details">
+           <div class="name_job">
+             <div style="align-content: center; font-weight: bolder;" class="name">{{loggedUser}}</div>
+             <div class="job" style="align-content: center; font-weight: bolder;">Role : {{currRole}}</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+  
+  <div class="home-section">
+    <div class="container">
+      <div class="row">
+        <div class="headtxt" style="color: maroon; font-weight: bolder; font-family: aladin; letter-spacing: 1px; font-size: 40px; margin: 0% 0% 1% 20%;"><b>Welcome to User Dashboard 👋</b></div>
+        <div style="color: darkgreen; font-weight: bold; font-size: 22px; margin: 0% 0% 2% 29%;"><b>[Author - GowthamRaj K]</b></div>
+          <div class="dashboard-card"style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
+            <div class="circle"><i id="icons" style="margin-left: 25px;" class="fa fa-trophy"></i></div>
+            <div class="text" style="font-family: 'aladin'; letter-spacing: 1px; font-size: 35px; font-weight: bolder; color: rgb(5, 44, 42);">Courses</div>
+            <div class="sub-text" *ngFor="let course of courses | async">{{course}} courses available</div>
+          </div>
+          <div class="dashboard-card" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
+            <div class="circle"><i id="icons" style="margin-left: 15px;" class="fa fa-graduation-cap"></i></div>
+            <div class="text" style="font-family: 'aladin'; letter-spacing: 1px; font-size: 35px; font-weight: bolder; color: rgb(5, 44, 42);">Leaners</div>
+            <div class="sub-text" *ngFor="let count of enrollmentcount | async">{{count}} enrollments have been <br>made by <b *ngFor="let enrollment of enrollments | async">{{enrollment}}</b> Learners</div>
+          </div>
+          <div class="dashboard-card" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
+            <div class="circle"><i id="icons" style="margin-left: 20px;" class="fa fa-list"></i></div>
+            <div class="text" style="font-family: 'aladin'; letter-spacing: 1px; font-size: 35px; font-weight: bolder; color: rgb(5, 44, 42);">Chapters</div>
+            <div class="sub-text" *ngFor="let chapter of chapters | async">{{chapter}} courses are with its <br>detailed chapters</div>
+          </div>
+          <div class="dashboard-card" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
+            <div class="circle"><i id="icons" style="margin-left: 20px;" class="fa fa-heart"></i></div>
+            <div class="text" style="font-family: 'aladin'; letter-spacing: 1px; font-size: 35px; font-weight: bolder; color: rgb(5, 44, 42);">Favourites</div>
+            <div class="sub-text" *ngFor="let wishlists of wishlist | async">{{wishlists}} courses are loved by <br>most of the Leaners </div>
+          </div>      
+      </div>
+    </div>
+  </div>
+
+<br><br><br><br>
+<app-footer></app-footer>

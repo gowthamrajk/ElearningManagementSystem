@@ -1,0 +1,30 @@
+.sidebar-text
+  {
+      font-size: medium;
+  }
+  .content-container {
+    padding-top: 20px;
+  }
+  
+  .sidebar-logo {
+    padding: 15px 15px 15px 30px;
+    font-size: 20px;
+    text-align: right;
+    background-color: #851313;
+    width: 100%;
+  }
+  .logoutbtn{
+    border: none;
+    background:transparent;
+    color: white;
+    border-radius: 15px;
+    margin-left: 10px;
+    padding: 5px 10px 5px 10px;
+    font-size: medium;
+  }
+  .logoutbtn:hover{
+    cursor: pointer;
+    background-color: #f03e3e;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+  }
