@@ -5,6 +5,17 @@
 - It is an **Elearning Management System** which can facilitate you to Learn courses and also manage the entire application.
 - It has 3 modes of operation as **1) ADMIN 2) USER 3) PROFESSOR**
 
+## ADMIN Mode 🔭
+
+This mode makes you as an admin and you can perform various activities like...
+- Adding a Professor
+- Managing Users/Learners
+- Managing Professors
+- Add new Courses & Chapters 
+- view Professor List, Course List, User List
+- Accept or Reject the Professors when they register as a new Professor for this Portal
+- Get various details on the admin dashboard as Total Professors, Total Users, Total Learners, Total Courses, Most Liked Courses & Total Chapters added to the courses.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
 ## Development server
