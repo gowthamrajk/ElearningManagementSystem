@@ -2,6 +2,9 @@
 
 ![](https://img.shields.io/github/languages/count/gowthamrajk/ElearningManagementSystem)   ![](https://img.shields.io/github/languages/top/gowthamrajk/ElearningManagementSystem)
 
+- It is an **Elearning Management System** which can facilitate you to Learn courses and also manage the entire application.
+- It has 3 modes of operation as **1) ADMIN 2) USER 3) PROFESSOR**
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
 ## Development server
