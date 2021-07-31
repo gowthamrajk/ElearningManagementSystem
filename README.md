@@ -16,6 +16,20 @@ This mode makes you as an admin and you can perform various activities like...
 - Accept or Reject the Professors when they register as a new Professor for this Portal
 - Get various details on the admin dashboard as Total Professors, Total Users, Total Learners, Total Courses, Most Liked Courses & Total Chapters added to the courses.
 
+## PROFESSOR Mode ❤️
+
+This mode makes you as a Professor and you can perform various activities like...
+- Professor can register for a new account in-order to login to the portal
+- Check the available User List 
+- check the available courses 
+- Add new Courses 
+- View & Edit Professor profile details
+- Enroll any of you wished course and Professor can also learn courses and make them as favourite
+- check your registration approval as a valid Professor by the ADMIN
+- Add new Chapters for respective courses
+- Get various details on the doctor dashboard as Total Learners, Total Courses, Most Liked Courses & Total Chapters added to the courses.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
 ## Development server
