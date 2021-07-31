@@ -42,6 +42,7 @@ This mode makes you as a user and you can perform various activities like...
 
 **[Additional Feature: The user can enroll to learn youtube tutorial courses as an embedded course in the portal itself]**
 
+
 # About Project Development 🥅
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
