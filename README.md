@@ -27,8 +27,20 @@ This mode makes you as a Professor and you can perform various activities like..
 - Enroll any of you wished course and Professor can also learn courses and make them as favourite
 - check your registration approval as a valid Professor by the ADMIN
 - Add new Chapters for respective courses
-- Get various details on the doctor dashboard as Total Learners, Total Courses, Most Liked Courses & Total Chapters added to the courses.
+- Get various details on the Professor dashboard as Total Learners, Total Courses, Most Liked Courses & Total Chapters added to the courses.
 
+## USER Mode 😄
+
+This mode makes you as a user and you can perform various activities like...
+- User can register for a new account in-order to login to the portal
+- Check the available Course List
+- check the available specific learning contents and wishlist
+- View & Edit user profile details
+- Enroll to new courses
+- check your enroll courses and favourite courses
+- Get various details on the user dashboard as Total Learners, Total Courses, Most Liked Courses & Total Chapters added to the courses.
+
+**[Additional Feature: The user can enroll to learn youtube tutorial courses as an embedded course in the portal itself]**
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
