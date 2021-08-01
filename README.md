@@ -156,6 +156,5 @@ Code and documentation Copyright 2021 : **Gowthamraj K**
 [twitter]: https://twitter.com/Gowtham29341737
 [youtube]: https://www.youtube.com/channel/UC_Q5Zet9Oz-UVAeJ-oE_uGQ?view_as=subscriber
 [instagram]: https://instagram.com/gow_t_h_a_m_r_a_j
-
-
+[linkedin]: https://www.linkedin.com/in/gowtham-kittusamy-54b835174/
 
