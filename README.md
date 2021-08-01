@@ -148,6 +148,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [<img align="left" alt="GowthamRaj  | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 [![](https://img.shields.io/badge/9698382306-25D366?style=social&logo=whatsapp&logoColor=green)]()
 
+<br>
 ## Copyright-and-license 📌
 
 Code and documentation Copyright 2021 : **Gowthamraj K**
