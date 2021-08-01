@@ -100,6 +100,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Database 🥅
 
+![MySQL](https://img.shields.io/static/v1?style=for-the-badge&message=MySQL&color=4479A1&logo=MySQL&logoColor=FFFFFF&label=)
 
 
 
