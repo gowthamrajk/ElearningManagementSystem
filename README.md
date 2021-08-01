@@ -155,7 +155,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Copyright-and-license 📌
 
-**Code and documentation Copyright 2021 :** ![](https://img.shields.io/static/v1?style=for-the-badge&message=Gowthamraj+K&color=007396&label=) 😄
+**Code and documentation Copyright 2021 : Gowthamraj K**
 
 [website1]: https://sites.google.com/view/code-jamm
 [hackerrank]: https://www.hackerrank.com/gowthamraj692
