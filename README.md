@@ -108,6 +108,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Development Tools 📺
 
+![Postman](https://img.shields.io/static/v1?style=for-the-badge&message=Postman&color=FF6C37&logo=Postman&logoColor=FFFFFF&label=)
 
 
 
