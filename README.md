@@ -40,7 +40,7 @@ This mode makes you as a user and you can perform various activities like...
 - check your enroll courses and favourite courses
 - Get various details on the user dashboard as Total Learners, Total Courses, Most Liked Courses & Total Chapters added to the courses.
 
-**[Additional Feature: The user can enroll to learn youtube tutorial courses as an embedded course in the portal itself]**
+**[Additional Feature: The user can enroll to learn youtube tutorial courses as an embedded video course in the portal itself]**
 
 
 # About Project Development 🥅
