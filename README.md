@@ -122,3 +122,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # USER MODE 😄
 
 <br>
+**For more queries, reach me through gowthamraj692@gmail.com or whatsapp @ 9698382306**
