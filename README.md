@@ -84,6 +84,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![TypeScript](https://img.shields.io/static/v1?style=for-the-badge&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=)
 ![jQuery](https://img.shields.io/static/v1?style=for-the-badge&message=jQuery&color=0769AD&logo=jQuery&logoColor=FFFFFF&label=)
 ![Bootstrap](https://img.shields.io/static/v1?style=for-the-badge&message=Bootstrap&color=7952B3&logo=Bootstrap&logoColor=FFFFFF&label=)
+![JavaScript](https://img.shields.io/static/v1?style=for-the-badge&message=JavaScript&color=222222&logo=JavaScript&logoColor=F7DF1E&label=)
 ![Font Awesome](https://img.shields.io/static/v1?style=for-the-badge&message=Font+Awesome&color=339AF0&logo=Font+Awesome&logoColor=FFFFFF&label=)
 ![Material-UI](https://img.shields.io/static/v1?style=for-the-badge&message=Material-UI&color=0081CB&logo=Material-UI&logoColor=FFFFFF&label=)
 ![Material Design Icons](https://img.shields.io/static/v1?style=for-the-badge&message=Material+Design+Icons&color=2196F3&logo=Material+Design+Icons&logoColor=FFFFFF&label=)
