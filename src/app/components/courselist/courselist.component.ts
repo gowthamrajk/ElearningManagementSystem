@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import * as $ from 'jquery';
+//import * as $ from 'jquery';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Observable } from 'rxjs';
 import { Course } from 'src/app/models/course';
@@ -8,6 +8,7 @@ import { Enrollment } from 'src/app/models/enrollment';
 import { Wishlist } from 'src/app/models/wishlist';
 import { ProfessorService } from 'src/app/services/professor.service';
 import { UserService } from 'src/app/services/user.service';
+declare var $: any;
 
 @Component({
   selector: 'app-courselist',
@@ -31,7 +32,11 @@ export class CourselistComponent implements OnInit  {
   enrolledURL = '';
   enrolledName = '';
   enrolledInstructorName = '';
+  enrolledStatus : any;
+  enrolledStatus2 = '';
 
+  @ViewChild('alertOne') alertOne: ElementRef | undefined;
+  
   constructor(private _service : ProfessorService, private userService : UserService, private _router : Router) { }
 
  ngOnInit() 
@@ -85,6 +90,10 @@ getcoursedetails(coursename : string)
   this.courselist = this.userService.getCourseListByName(coursename);
   this.enrollmentstatus = this.userService.getEnrollmentStatus(coursename,this.loggedUser,this.currRole);
   this.wishliststatus = this.userService.getWishlistStatus(coursename,this.loggedUser);
+  this.enrollmentstatus.subscribe(val=> { this.enrolledStatus = val});
+  if(this.enrolledStatus[0] === "enrolled")
+  console.log("yes");
+  console.log(this.enrolledStatus[0]);
 }
 
 backToCourseList()
@@ -112,6 +121,7 @@ enrollcourse(course : Course, loggedUser : string, currRole : string)
   this.enrolledURL = course.youtubeurl;
   this.enrolledName = course.coursename;
   this.enrolledInstructorName = course.instructorname;
+  this.enrolledStatus2 = "enrolled"
   $("#enrollbtn").hide();
   $("#enrolledbtn").show();
   setTimeout(() => {
@@ -159,7 +169,14 @@ addToWishList(course : Course, loggedUser : string, currRole : string)
 
 visitCourse(coursename : string)
 {
-  this._router.navigate(['/fullcourse', coursename]);
+  if(this.enrolledStatus.slice(0, 1).shift() === "enrolled" || this.enrolledStatus2 === "enrolled")
+    this._router.navigate(['/fullcourse', coursename]);
+  else if(this.enrolledStatus.slice(0, 1).shift() === "notenrolled")
+  {
+     $("#alertOne").modal('show');
+    //window.alert("You have not Enrolled to the course, Please Enroll it to proceed futher !!!");
+  }
+    
 }
 
  owlDragging(e: any){
