@@ -68,3 +68,70 @@
     font-size: large;
     display: flex;
 }
+.sub-container
+{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px 8px darkgray;
+    margin-top: 2%;
+    padding: 1%;
+    width: 100%;
+}
+.sub-btns
+{
+    background-color: white;
+    padding: 3%;
+}
+.btn-info
+{
+    margin-right: 4%;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.btn-info:active, .btn-info:focus, .btn-info:hover
+{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: white;
+}
+.descriptions
+{
+    margin-left: 15%;
+    margin-right: 10%;
+    background-color: white;
+}
+.certificate
+{
+    opacity: 0.6; 
+    border: 1px solid black; 
+    font-weight: bolder; 
+    margin-left: 22%; 
+    cursor: pointer;
+    margin-top: 2%; 
+    display: inline-block; 
+    background-color: white; 
+    padding: 5px 30px 5px 30px;
+}
+#searchtxt
+{
+    font-weight: bold;
+    background-color: rgb(238, 236, 236);
+    padding: 1%;
+    margin-top: -5.4%;
+    width: 70%;
+    margin-bottom: 4%;
+}
+#questions, #notestxt
+{
+    font-weight: bold;
+    background-color: rgb(243, 241, 241);
+    padding: 2%;
+    margin-top: 3%;
+    margin-bottom: 8%;
+    width: 70%;
+}
