@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Chapter } from 'src/app/models/chapter';
 import { UserService } from 'src/app/services/user.service';
 import * as $ from 'jquery';
+import { Course } from 'src/app/models/course';
 
 @Component({
   selector: 'app-fullcourse',
@@ -15,12 +16,19 @@ export class FullcourseComponent implements OnInit {
   video = 'Ejzi8XbNbcY';
   courseName = 'springboot';
   chapterlist : Observable<Chapter[]> | undefined;
+  courselist : Observable<Course[]> | undefined;
   chapter = new Chapter();
 
   constructor(private _router : Router, private _service : UserService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
 
+    $("#overview").show();
+    $("#qa").hide();
+    $("#notes").hide();
+    $("#announcements").hide();
+    $("#questions").hide();
+    $("#notestxt").hide();
     this.courseName = this.activatedRoute.snapshot.params['coursename'];
 
     const target = 'https://www.youtube.com/iframe_api'
@@ -32,6 +40,37 @@ export class FullcourseComponent implements OnInit {
     }
 
     this.chapterlist = this._service.getChappterListByCourseName(this.courseName);
+    this.courselist = this._service.getCourseListByName(this.courseName);
+
+  }
+
+  openOverview()
+  {
+    $("#overview").show();
+    $("#qa,#announcements,#notes").hide();
+  }
+  openQandA()
+  {
+    $("#qa").show();
+    $("#overview,#announcements,#notes").hide();
+  }
+  openNotes()
+  {
+    $("#notes").show();
+    $("#overview,#announcements,#qa").hide();
+  }
+  openAnnouncements()
+  {
+    $("#announcements").show();
+    $("#overview,#qa,#notes").hide();
+  }
+  newQuestion()
+  {
+    $("#questions").toggle();
+  }
+  newNotes()
+  {
+    $("#notestxt").toggle();
   }
 
   set1()
