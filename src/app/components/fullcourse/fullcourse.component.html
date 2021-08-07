@@ -65,6 +65,64 @@
         <hr *ngIf="chapter.chapter8name !== ''">
     </div>
 </div>
+<div class="sub-container">
+    <div class="sub-btns">
+        <button id="overview-btn" (click)="openOverview()" class="btn btn-info">Overview</button>
+        <button id="qa-btn" (click)="openQandA()" class="btn btn-info">Q&A</button>
+        <button id="notes-btn" (click)="openNotes()" class="btn btn-info">Notes</button>
+        <button id="announcements-btn" (click)="openAnnouncements()" class="btn btn-info">Announcements</button>
+        <hr>
+    </div>
+    <div id="overview" class="descriptions" *ngFor="let course of courselist | async">
+        <strong style="font-weight: bolder; font-size: 25px;">About this Course</strong>
+        <h3 class="card-title text-left" style="margin-top: 1.5%; font-weight: normal; font-size: 21px;">{{course.coursename}}</h3>
+        <h6 class="text-center" style="margin-left: 0; padding: 5px 20px 5px 20px; background-color: darkgoldenrod; border-radius: 5px; font-weight: bold; margin-bottom: 2%; margin-top: 1%; display: inline-block; color: white;">{{course.courseid}}</h6>
+        <hr style="margin-top: 2%; margin-bottom: 2%;">
+
+        <p class="card-text"><b style="color: darkblue; font-size: large; margin-bottom: 1%;">{{course.description}}</b></p>
+        <hr style="margin-top: 2%; margin-bottom: 2%;">
+
+        <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Level : </b><b style="margin-left: 12%">{{course.skilllevel}}</b></div>
+        <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Language : </b><b style="margin-left: 7%">{{course.language}}</b></div>
+        <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Course Type : </b><b style="margin-left: 4.2%">{{course.coursetype}} contents</b></div>
+        <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Instructor : </b><b style="margin-left: 7%">{{course.instructorname}} - {{course.instructorinstitution}}</b></div>
+        <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Enrolled Date : </b><b style="margin-left: 3%">{{course.enrolleddate}}</b></div>
+        <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Learners : </b><b style="margin-left: 8.5%">{{course.enrolledcount}} learners enrolled previously</b></div>
+        <hr style="margin-top: 2%; margin-bottom: 2%;">
+
+        <div>
+            <strong style="font-size: large;">Features </strong>
+            <label style="font-weight: large; margin-left: 10%;">Available on <span style="color: blueviolet; font-weight: bold;">Android</span> and <span style="color: blueviolet; font-weight: bold;">iOS</span></label>
+        </div>
+        <hr style="margin-top: 2%; margin-bottom: 2%;">
+
+        <div>
+            <strong style="font-size: large;">Certificate </strong>
+            <label style="font-weight: large; margin-left: 10%;">Get the certificate by completing entire course</label>
+            <br>
+            <div class="certificate">Certificate</div>
+        </div>
+        <hr style="margin-top: 2%; margin-bottom: 2%;">
+    </div>
+    <div id="qa" style="padding-bottom: 5%;" class="descriptions">
+        <div style="display: inline-block; color: white; font-weight: bolder; background-color: black; padding: 1.1%; margin-left: 66%; border-radius: 5px; cursor: pointer;"><i class="fa fa-search"></i></div>
+        <input class="form-control" id="searchtxt" type="text" name="searchQA" placeholder="search all course questions..."/>
+        <strong id="newQA" (click)="newQuestion()" style="font-size: large; font-weight: bolder; color: black; margin-bottom: 4%; cursor: pointer;">Ask a New Question ?</strong>
+        <textarea type="text" id="questions" rows = "4" class="form-control" placeholder="ask your questions here..."></textarea>
+    </div>
+    <div id="notes" style="padding-bottom: 5%;" class="descriptions">
+        <div style="display: inline-block; color: white; font-weight: bolder; background-color: black; padding: 1.1%; margin-left: 66%; border-radius: 5px; cursor: pointer;"><i class="fa fa-search"></i></div>
+        <input class="form-control" id="searchtxt" type="text" name="searchNotes" placeholder="search course notes here..."/>
+        <strong id="newNotes" (click)="newNotes()" style="font-size: large; font-weight: bolder; color: black; margin-bottom: 4%; cursor: pointer;">Create new Note <i style="color: black; font-size: 18px;" class="fa fa-plus-circle"></i></strong>
+        <textarea type="text" id="notestxt" rows = "2" class="form-control" placeholder="add your new notes here..."></textarea>
+        <br><br><strong style="margin-top: 3%; font-weight: normal;">Click the "Create new note" or the "+" button to make your first note.</strong>
+    </div>
+    <div id="announcements" style="display: inline-block; padding: 10%;" class="descriptions">
+        <strong style="font-weight: bolder; font-size: 28px; margin-left: 12%;">No announcements posted yet</strong>
+        <br>
+        <strong style="font-weight: normal; font-size: 18px;">The instructor hasn’t added any announcements to this course yet. Announcements are used to inform you of updates or additions to the course.</strong>
+    </div>
+</div>
 </div>
 
 <br><br>
