@@ -111,7 +111,7 @@
         <h6 class="text-center" style="padding: 5px 10px 5px 10px; background-color: darkgoldenrod; border-radius: 5px; font-weight: bold; margin-bottom: 2%; width: 35%; color: white;">{{enrolledID}}</h6>
         <div><b style="color: white; font-size: large; margin-bottom: 4%;">Instructed By : </b><b> {{enrolledInstructorName}}</b></div>
         <div style="margin-top: 4%;">
-          <a style="margin-right: 8%; border: none;" id="enrollsuccessbtn" class="btn btn-primary">Visit Course</a>
+          <a (click)="visitCourse(data.coursename)" style="margin-right: 8%; border: none;" id="enrollsuccessbtn" class="btn btn-primary">Visit Course</a>
         </div>
       </div>
     </div>
