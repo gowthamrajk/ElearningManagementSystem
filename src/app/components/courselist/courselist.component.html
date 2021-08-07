@@ -118,6 +118,23 @@
   </div>
 </div>
 
+<div class="modal fade" #alertOne id="alertOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Coure Not Enrolled ⚠️</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img [src]="'assets/img/alert.gif'" style="margin-left: 35%;" width="150" height="150"><br>
+        <b style="font-weight: bold; color: red; align-content: center;">You have not yet Enrolled to this course, Please Enroll to this course to proceed futher !!!</b>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" style="cursor: pointer;" data-bs-dismiss="modal">Dismiss</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <br>
 <app-footer></app-footer>
