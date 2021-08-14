@@ -53,30 +53,37 @@ export class AddchapterComponent implements OnInit {
 
     $("#remove2btn").click(function(){
       $("#chapter2").hide();
+      $('#chapter2nametxt, #chapter2idtxt').val('');
       $("#chapter1btn").show();
     });
     $("#remove3btn").click(function(){
       $("#chapter3").hide();
+      $('#chapter3nametxt, #chapter3idtxt').val('');
       $("#chapter2btn,#remove2btn").show();
     });
     $("#remove4btn").click(function(){
       $("#chapter4").hide();
+      $('#chapter4nametxt, #chapter4idtxt').val('');
       $("#chapter3btn,#remove3btn").show();
     });
     $("#remove5btn").click(function(){
       $("#chapter5").hide();
+      $('#chapter5nametxt, #chapter5idtxt').val('');
       $("#chapter4btn,#remove4btn").show();
     });
     $("#remove6btn").click(function(){
       $("#chapter6").hide();
+      $('#chapter6nametxt, #chapter6idtxt').val('');
       $("#chapter5btn,#remove5btn").show();
     });
     $("#remove7btn").click(function(){
       $("#chapter7").hide();
+      $('#chapter7nametxt, #chapter7idtxt').val('');
       $("#chapter6btn,#remove6btn").show();
     });
     $("#remove8btn").click(function(){
       $("#chapter8").hide();
+      $('#chapter8nametxt, #chapter8idtxt').val('');
       $("#chapter7btn,#remove7btn").show();
     });
     
