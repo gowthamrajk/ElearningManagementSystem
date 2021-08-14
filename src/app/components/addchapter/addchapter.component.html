@@ -7,12 +7,17 @@
       
       <div class="form-group">
           <label for="coursename">Course Name: <b class="text-danger">*</b></label>
-          <input type="text" class="form-control" placeholder="enter course name" name="coursename" [(ngModel)]="chapter.coursename" required 
+          <select class="form-control" id="sel1" name="coursename" [(ngModel)]="chapter.coursename" required
+            #coursename="ngModel">
+              <option style="color: lightgray;" selected="true" value="default">select course name</option>
+              <option *ngFor="let course of coursenames | async">{{course}}</option>
+            </select>
+          <!--<input type="text" class="form-control" placeholder="enter course name" name="coursename" [(ngModel)]="chapter.coursename" required 
           #coursename="ngModel"
           [class.is-invalid]="coursename.invalid && coursename.touched">
-         <small class="text-danger" [class.d-none]="coursename.valid || coursename.untouched"><b>required field</b></small>
+         <small class="text-danger" [class.d-none]="coursename.valid || coursename.untouched"><b>required field</b></small>-->
       </div>
-      <small style="color: gray; font-weight: bold;">Please enter proper course name as per the course list</small>
+      <small style="color: gray; font-weight: bold;">Please choose course name from the drop-down</small>
 
       <div id="chapter1">
       <div class="form-group">
