@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { Chapter } from 'src/app/models/chapter';
 import { ProfessorService } from 'src/app/services/professor.service';
 import * as $ from 'jquery';
+import { Course } from 'src/app/models/course';
 
 @Component({
   selector: 'app-addchapter',
@@ -14,10 +15,13 @@ import * as $ from 'jquery';
 export class AddchapterComponent implements OnInit {
 
   chapter = new Chapter();
+  coursenames : Observable<Course[]> | undefined;
      
   constructor(private _router : Router, private _service : ProfessorService) {}  
     
   ngOnInit() {
+
+    this.coursenames = this._service.getCourseListNames();
 
     $("#chapter2btn,#chapter3btn,#chapter4btn,#chapter5btn,#chapter6btn,#chapter7btn,#chapter8btn").hide();
     $("#chapter2,#chapter3,#chapter4,#chapter5,#chapter6,#chapter7,#chapter8").hide();
