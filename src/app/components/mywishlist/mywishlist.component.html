@@ -18,7 +18,8 @@
             <div class="text"><b style="color: darkred; font-size: large;">Type :</b> {{course.coursetype}} Tutorials</div>
             <div class="text"><b style="color: darkred; font-size: large;">Level :</b> {{course.skilllevel}}</div>
             <div class="text"><b style="color: darkred; font-size: large;">Language :</b> {{course.language}}</div>
-            <a (click)="visitCourse(course.coursename)" style="margin-top: 5%; border: none;" id="enrollsuccessbtn" class="btn btn-primary">Visit Course</a>
+            <a *ngIf="course.coursetype === 'Youtube'" (click)="visitCourse(course.coursename)" style="margin-top: 5%; border: none;" id="enrollsuccessbtn" class="btn btn-primary">Visit Course</a>
+            <a *ngIf="course.coursetype === 'Website'" (click)="openURL(course.websiteurl)" style="margin-top: 5%; border: none;" id="enrollsuccessbtn" class="btn btn-primary">Visit Course</a>
         </div>
     </div>
   </div>
