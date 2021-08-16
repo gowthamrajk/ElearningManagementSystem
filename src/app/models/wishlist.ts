@@ -8,6 +8,7 @@ export class Wishlist
     instructorinstitution : string = '';
     enrolledcount : string = '0';
     coursetype : string = '';
+    websiteurl : string = '';
     skilllevel : string = '';
     language : string = '';
     description : string  = '';
