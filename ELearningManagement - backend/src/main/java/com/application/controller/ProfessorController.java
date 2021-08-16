@@ -193,6 +193,19 @@ public class ProfessorController
 		wishlistCount.add(wishlists.size());
 		return new ResponseEntity<List<Integer>>(wishlistCount, HttpStatus.OK);
 	}
+  
+  @GetMapping("/getcoursenames")
+	@CrossOrigin(origins = "http://localhost:4200")
+	public ResponseEntity<List<String>> getCourseNames() throws Exception
+	{
+		List<Course> courses = courseService.getAllCourses();
+		List<String> coursenames = new ArrayList<>();
+		for(Course obj : courses)
+		{
+			coursenames.add(obj.getCoursename());
+		}
+		return new ResponseEntity<List<String>>(coursenames, HttpStatus.OK);
+	}
 	
 	public String getNewID()
 	{
