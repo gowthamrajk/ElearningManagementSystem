@@ -35,5 +35,10 @@ export class MywishlistComponent implements OnInit {
   {
     this._router.navigate(['/fullcourse', coursename]);
   }
+  
+  openURL(url : string)
+  {
+    (window as any).open(url, "_blank");
+  }
 
 }
