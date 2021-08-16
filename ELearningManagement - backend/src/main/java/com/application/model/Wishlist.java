@@ -15,6 +15,7 @@ public class Wishlist
 	private String instructorinstitution;
 	private String enrolledcount;
 	private String coursetype;
+	private String websiteurl;
 	private String skilllevel;
 	private String language;
 	private String description;
@@ -24,7 +25,7 @@ public class Wishlist
 		super();
 	}
 
-	public Wishlist(String coursename, String courseid, String likeduser, String likedusertype, String instructorname, String instructorinstitution, String enrolledcount, String coursetype, String skilllevel, String language, String description) 
+	public Wishlist(String coursename, String courseid, String likeduser, String likedusertype, String instructorname, String instructorinstitution, String enrolledcount, String coursetype, String websiteurl, String skilllevel, String language, String description) 
 	{
 		super();
 		this.coursename = coursename;
@@ -35,6 +36,7 @@ public class Wishlist
 		this.instructorinstitution = instructorinstitution;
 		this.enrolledcount = enrolledcount;
 		this.coursetype = coursetype;
+		this.websiteurl= websiteurl;
 		this.skilllevel = skilllevel;
 		this.language = language;
 		this.description = description;
@@ -118,6 +120,16 @@ public class Wishlist
 	public void setCoursetype(String coursetype) 
 	{
 		this.coursetype = coursetype;
+	}
+	
+	public String getWebsiteurl() 
+	{
+		return websiteurl;
+	}
+
+	public void setWebsiteurl(String websiteurl) 
+	{
+		this.websiteurl = websiteurl;
 	}
 
 	public String getSkilllevel() 
