@@ -36,7 +36,7 @@
     <ng-container *ngFor="let data of websitecourselist | async">
       <ng-template carouselSlide class="card" style="width: 18rem;">
         <div class="card-body" id="websitecard" (click)="getcoursedetails(data.coursename)" style="box-shadow: 2px 2px 15px 8px rgb(147, 158, 147); margin-right: 5%; margin-bottom: 10%; width: 300px; background-color: white;">
-          <img class="card-img-top" [src]="'assets/img/website.png'" [alt]="data.courseid">
+          <img class="card-img-top" [src]="'assets/img/websitebg.png'" [alt]="data.courseid">
           <hr>
           <h4 class="card-title text-center" style="margin-bottom: 4%;"><b>{{data.coursename}}</b></h4>
           <h6 class="text-center" style="margin-left: auto; margin-right: auto; padding: 5px 10px 5px 10px; background-color: darkgoldenrod; border-radius: 5px; font-weight: bold; width: 55%; color: white;">{{data.courseid}}</h6>
