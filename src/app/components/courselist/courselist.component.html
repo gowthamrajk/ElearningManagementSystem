@@ -36,7 +36,7 @@
     <ng-container *ngFor="let data of websitecourselist | async">
       <ng-template carouselSlide class="card" style="width: 18rem;">
         <div class="card-body" id="websitecard" (click)="getcoursedetails(data.coursename)" style="box-shadow: 2px 2px 15px 8px rgb(147, 158, 147); margin-right: 5%; margin-bottom: 10%; width: 300px; background-color: white;">
-          <img class="card-img-top" [src]="data.websiteurl" [alt]="data.courseid">
+          <img class="card-img-top" [src]="'assets/img/website.png'" [alt]="data.courseid">
           <hr>
           <h4 class="card-title text-center" style="margin-bottom: 4%;"><b>{{data.coursename}}</b></h4>
           <h6 class="text-center" style="margin-left: auto; margin-right: auto; padding: 5px 10px 5px 10px; background-color: darkgoldenrod; border-radius: 5px; font-weight: bold; width: 55%; color: white;">{{data.courseid}}</h6>
@@ -71,16 +71,19 @@
     <p class="card-text"><br><b style="color: darkblue; font-size: large; margin-bottom: 1%;">{{data.description}}</b></p>
     <div *ngFor="let status of enrollmentstatus | async">
       <div *ngIf="status === 'notenrolled'" >
-        <a (click)="enrollcourse(data,loggedUser,currRole)" id="enrollbtn" value="Accept" style="margin-right: 8%; margin-left: 3%" class="btn btn-primary">Enroll Now</a>
-        <a id="enrolledbtn" class="btn btn-secondary" style="display: none; margin-right: 8%; margin-left: 7%;">Enrolled</a>
+        <a *ngIf="data.coursetype === 'Youtube'" (click)="enrollcourse(data,loggedUser,currRole)" id="enrollbtn" value="Accept" style="margin-right: 8%; margin-left: 3%" class="btn btn-primary">Enroll Now</a>
+        <a *ngIf="data.coursetype === 'Youtube'" id="enrolledbtn" class="btn btn-secondary" style="display: none; margin-right: 8%; margin-left: 7%;">Enrolled</a>
       </div>
       <div *ngIf="status === 'enrolled'" >
-        <a style="margin-right: 8%; margin-left: 7%;" class="btn btn-secondary">Enrolled</a>
+        <a *ngIf="data.coursetype === 'Youtube'" style="margin-right: 8%; margin-left: 7%;" class="btn btn-secondary">Enrolled</a>
       </div>
     </div>
-    <div style="margin-top: -7.5%; margin-left: 28%;">
-      <!--<a (click)="enrollcourse(data,loggedUser,currRole)" style="margin-right: 8%; margin-left: 8%" class="btn btn-primary">Enroll Now</a>-->
+    <div *ngIf="data.coursetype === 'Youtube'" style="margin-top: -7.5%; margin-left: 28%;">
       <a (click)="visitCourse(data.coursename)" style="margin-right: 2%; border: none;" class="btn btn-primary">Visit Course</a>
+      <a id="courselistbtn" (click)="backToCourseList()" style="border: none; margin-right: 2%;" class="btn btn-primary">Courselist</a>
+    </div>
+    <div *ngIf="data.coursetype === 'Website'" style="margin-top: 0%; margin-left: 10%;">
+      <a (click)="gotoURL(data.websiteurl)" style="margin-right: 8%; border: none;" class="btn btn-primary">Visit Course</a>
       <a id="courselistbtn" (click)="backToCourseList()" style="border: none; margin-right: 2%;" class="btn btn-primary">Courselist</a>
     </div>
     <div *ngFor="let status of wishliststatus | async">
