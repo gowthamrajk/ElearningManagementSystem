@@ -178,6 +178,11 @@ visitCourse(coursename : string)
   }
     
 }
+  
+gotoURL(url : string)
+{
+  (window as any).open(url, "_blank");
+}
 
  owlDragging(e: any){
   console.log(e);
