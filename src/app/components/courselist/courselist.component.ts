@@ -151,6 +151,7 @@ addToWishList(course : Course, loggedUser : string, currRole : string)
   this.wishlist.instructorinstitution = course.instructorinstitution;
   this.wishlist.enrolledcount = course.enrolledcount;
   this.wishlist.coursetype = course.coursetype;
+  this.wishlist.websiteurl = course.websiteurl;
   this.wishlist.skilllevel = course.skilllevel;
   this.wishlist.language = course.language;
   this.wishlist.description = course.description;
