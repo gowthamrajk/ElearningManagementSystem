@@ -68,5 +68,10 @@ export class ProfessorService
   {
     return this._http.put<any>(`${NAV_URL}/updateprofessor`,professor);
   }
-
+  
+  getCourseListNames() : Observable<any>
+  {
+    return this._http.get(`${NAV_URL}/getcoursenames/`);
+  }
+  
 }
