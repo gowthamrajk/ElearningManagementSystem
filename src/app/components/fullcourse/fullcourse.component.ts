@@ -6,6 +6,9 @@ import { UserService } from 'src/app/services/user.service';
 import * as $ from 'jquery';
 import { Course } from 'src/app/models/course';
 
+declare var require: any;
+const FileSaver = require('file-saver');
+
 @Component({
   selector: 'app-fullcourse',
   templateUrl: './fullcourse.component.html',
@@ -24,11 +27,8 @@ export class FullcourseComponent implements OnInit {
   ngOnInit(): void {
 
     $("#overview").show();
-    $("#qa").hide();
-    $("#notes").hide();
-    $("#announcements").hide();
-    $("#questions").hide();
-    $("#notestxt").hide();
+    $("#qa, #notes, #announcements, #questions, #notestxt, #downloads").hide();
+    $("#downloadalert").css("display","none");
     this.courseName = this.activatedRoute.snapshot.params['coursename'];
 
     const target = 'https://www.youtube.com/iframe_api'
@@ -47,22 +47,32 @@ export class FullcourseComponent implements OnInit {
   openOverview()
   {
     $("#overview").show();
-    $("#qa,#announcements,#notes").hide();
+    $("#qa,#announcements,#notes,#downloads").hide();
+    $("#downloadalert").css("display","none");
   }
   openQandA()
   {
     $("#qa").show();
-    $("#overview,#announcements,#notes").hide();
+    $("#overview,#announcements,#notes,#downloads").hide();
+    $("#downloadalert").css("display","none");
   }
   openNotes()
   {
     $("#notes").show();
-    $("#overview,#announcements,#qa").hide();
+    $("#overview,#announcements,#qa,#downloads").hide();
+    $("#downloadalert").css("display","none");
   }
   openAnnouncements()
   {
     $("#announcements").show();
-    $("#overview,#qa,#notes").hide();
+    $("#overview,#qa,#notes,#downloads").hide();
+    $("#downloadalert").css("display","none");
+  }
+  openDownloads()
+  {
+    $("#downloads").show();
+    $("#overview,#qa,#notes,#announcements").hide();
+    $("#downloadalert").css("display","block");
   }
   newQuestion()
   {
@@ -138,6 +148,17 @@ export class FullcourseComponent implements OnInit {
   isScriptLoaded(target: string): boolean
   {
     return document.querySelector('script[src="' + target + '"]') ? true : false
+  }
+
+  downloadPdf() {
+    const pdfUrl = './assets/Introduction to Spring MVC.pdf';
+    const pdfName = 'Introduction to Spring MVC';
+    FileSaver.saveAs(pdfUrl, pdfName);
+  }
+
+  openDoc() {
+    const pdfUrl = './assets/Introduction to Spring MVC.pdf';
+    window.open(pdfUrl + '#page=1', '_blank', '', true);
   }
 
 }
