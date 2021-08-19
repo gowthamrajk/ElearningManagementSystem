@@ -69,6 +69,7 @@
     <div class="sub-btns">
         <button id="overview-btn" (click)="openOverview()" class="btn btn-info">Overview</button>
         <button id="qa-btn" (click)="openQandA()" class="btn btn-info">Q&A</button>
+        <button id="downloads-btn" (click)="openDownloads()" class="btn btn-info">Downloads</button>
         <button id="notes-btn" (click)="openNotes()" class="btn btn-info">Notes</button>
         <button id="announcements-btn" (click)="openAnnouncements()" class="btn btn-info">Announcements</button>
         <hr>
@@ -109,6 +110,17 @@
         <input class="form-control" id="searchtxt" type="text" name="searchQA" placeholder="search all course questions..."/>
         <strong id="newQA" (click)="newQuestion()" style="font-size: large; font-weight: bolder; color: black; margin-bottom: 4%; cursor: pointer;">Ask a New Question ?</strong>
         <textarea type="text" id="questions" rows = "4" class="form-control" placeholder="ask your questions here..."></textarea>
+    </div>
+    <div id="downloads" *ngFor="let chapter of chapterlist | async" style="padding-bottom: 5%;" class="descriptions">
+        <div id="downloadalert" style="color: darkred; font-size: larger; display: none; font-weight: bolder; margin-top: 5%; margin-bottom: 5%; margin-right: 10%;" *ngIf="chapter.chapter1name === ''">Currently No Resources available for download. Please wait, the Instructor will be adding the Resources while adding the chapters soon here</div>
+        <div *ngIf="chapter.chapter1name !== ''">
+          <strong id="downloadtxt" style="font-size: large; font-weight: bolder; color: black; margin-bottom: 4%; cursor: pointer;">View and download your course related materials here ...</strong>
+          <div style="display: inline-block; width: 100%; margin-top: 5%; margin-bottom: 5%;">
+            <button type="button" class="btn btn-warning btn-sm" style="display: inline-block; margin-right: 5%; border-radius: 10px; font-weight: bolder; font-size: large;" (click)="openDoc()">View Material</button>
+            <button type="button" class="btn btn-success btn-sm" style="display: inline-block; border-radius: 10px; font-weight: bolder; font-size: large;"(click)="downloadPdf()">Download Resource</button>
+          </div>
+          <strong id="downloadtxt" style="font-size: large; font-weight: bolder; color: black; margin-bottom: 5%; cursor: pointer;">For more course materials, contact the Instructor or ADMIN - (Gowthamraj K) gowthamraj692@gmail.com / whatsapp to 9698382306</strong>
+        </div>
     </div>
     <div id="notes" style="padding-bottom: 5%;" class="descriptions">
         <div style="display: inline-block; color: white; font-weight: bolder; background-color: black; padding: 1.1%; margin-left: 66%; border-radius: 5px; cursor: pointer;"><i class="fa fa-search"></i></div>
