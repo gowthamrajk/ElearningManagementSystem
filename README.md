@@ -93,6 +93,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Additional Stack 😄
 
+![Filesaver JS](https://img.shields.io/static/v1?style=for-the-badge&message=Filesaver+Js&color=222222&logo=JavaScript&logoColor=F7DF1E&label=)
+
 
 
 ## Server Side ⚡
