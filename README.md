@@ -142,6 +142,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/130416780-0ae30b7e-2cf0-4366-b169-b7bff9fe1a6f.png)
 
 
+## REGISTRATION page
+
+
+
 # ADMIN MODE: 📫
 
 # PROFESSOR MODE ❤️
