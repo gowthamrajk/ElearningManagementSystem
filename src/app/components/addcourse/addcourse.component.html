@@ -24,9 +24,9 @@
                                 [class.is-invalid]="instructorname.invalid && instructorname.touched">
                                <small class="text-danger" [class.d-none]="instructorname.valid || instructorname.untouched"><b>required field</b></small>
                             </div>
-                            <div class="form-group">
-                                <label>Course Youtube URL : <b style="color:red;">*</b></label>
-                                <input type="url" class="form-control" placeholder="please mention youtube url" name="youtubeurl" [(ngModel)]="course.youtubeurl" required 
+                            <div class="form-group" style="display: none;" id="youtubelink">
+                                <label>Course Video ID : (only ID) <b style="color:red;">*</b></label>
+                                <input type="url" class="form-control" placeholder="please mention youtube video ID" name="youtubeurl" [(ngModel)]="course.youtubeurl" required 
                                 #youtubeurl="ngModel"
                                 [class.is-invalid]="youtubeurl.invalid && youtubeurl.touched">
                                 <small class="text-danger" [class.d-none]="youtubeurl.valid || youtubeurl.untouched"><b>required field</b></small>
@@ -35,8 +35,8 @@
                                 <label>Course Type : <b style="color:red;">*</b></label>
                                 <select class="form-control" id="sel1" name="coursetype" [(ngModel)]="course.coursetype"
                                 #coursetype="ngModel">
-                                    <option>Website</option>
-                                    <option>Youtube</option>
+                                    <option value="Website">Website</option>
+                                    <option value="Youtube">Youtube</option>
                                     <option>Live Interaction</option>
                                     <option>Google Classroom</option>
                                     <option>Others</option>
@@ -68,9 +68,9 @@
                                 [class.is-invalid]="instructorinstitution.invalid && instructorinstitution.touched">
                                <small class="text-danger" [class.d-none]="instructorinstitution.valid || instructorinstitution.untouched"><b>required field</b></small>
                             </div>
-                            <div class="form-group">
-                                <label>Course Website URL : </label>
-                                <input type="url" class="form-control" placeholder="please mention youtube url" name="websiteurl" [(ngModel)]="course.websiteurl"
+                            <div class="form-group" style="display: none;" id="websitelink">
+                                <label>Course Website URL : <b style="color:red;">*</b></label>
+                                <input type="url" class="form-control" placeholder="please mention website url" name="websiteurl" [(ngModel)]="course.websiteurl"
                                 #websiteurl="ngModel"
                                 [class.is-invalid]="websiteurl.invalid && websiteurl.touched">
                             </div>
