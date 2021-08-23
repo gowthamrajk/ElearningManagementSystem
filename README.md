@@ -144,6 +144,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## REGISTRATION page
 
+![image](https://user-images.githubusercontent.com/43011442/130416901-cca34a54-c119-42dc-906c-75949fd07514.png)
 
 
 # ADMIN MODE: 📫
