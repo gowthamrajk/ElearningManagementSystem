@@ -124,6 +124,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # UI overview ❤️ 
 
+## Landing Page
+
+![image](https://user-images.githubusercontent.com/43011442/130415789-fc6029f8-a4ce-4784-8df2-2b9ba16e3895.png)
+
+
 # ADMIN MODE: 📫
 
 # PROFESSOR MODE ❤️
