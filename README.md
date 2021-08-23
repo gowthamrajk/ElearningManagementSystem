@@ -127,6 +127,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Landing Page
 
 ![image](https://user-images.githubusercontent.com/43011442/130415789-fc6029f8-a4ce-4784-8df2-2b9ba16e3895.png)
+![image](https://user-images.githubusercontent.com/43011442/130415989-66a35716-556b-474c-afc6-e6eaca35ee50.png)
 
 
 # ADMIN MODE: 📫
