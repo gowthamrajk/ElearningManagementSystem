@@ -207,6 +207,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Total Professors List
 
+![image](https://user-images.githubusercontent.com/43011442/130580110-d4973385-da69-43ec-85d4-fa54a4450bef.png)
 
 
 # PROFESSOR MODE ❤️
