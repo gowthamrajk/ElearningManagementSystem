@@ -244,6 +244,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Add New Course
 
+![image](https://user-images.githubusercontent.com/43011442/130581596-fb327ab1-2bfa-45a3-88e7-0742198347b0.png)
 
 <br>
 
