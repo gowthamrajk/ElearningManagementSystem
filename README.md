@@ -362,6 +362,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## User List
 
 ![image](https://user-images.githubusercontent.com/43011442/130586512-7f4eee5c-d41f-4cb5-ad2d-9353913545a9.png)
+![image](https://user-images.githubusercontent.com/43011442/130586601-8367c52c-d720-4ce6-9434-722d44d55891.png)
 
 <br>
 
