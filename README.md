@@ -154,6 +154,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Admin Dashboard
 
 ![image](https://user-images.githubusercontent.com/43011442/130577430-97d50d49-ba59-4a5c-82b8-a68a5e60166e.png)
+![image](https://user-images.githubusercontent.com/43011442/130577509-13fd5da6-0a64-4814-9f9c-1fefb8a2c6ca.png)
 
 
 # PROFESSOR MODE ❤️
