@@ -134,7 +134,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/130416298-f5edaa3f-5480-46fe-bec2-dea7f08b80e4.png)
 ![image](https://user-images.githubusercontent.com/43011442/130416371-e9204348-1526-428f-b056-5bf1c68dbe0e.png)
 
-
 ## LOGIN page
 
 ![image](https://user-images.githubusercontent.com/43011442/130416646-f7e2e4c2-902a-4577-b553-b62a84767530.png)
