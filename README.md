@@ -289,10 +289,23 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/130583784-af41d038-5166-4d11-afa2-a17f2811b9a3.png)
 ![image](https://user-images.githubusercontent.com/43011442/130583812-a3b223f6-18c2-481a-8c7d-9b0260ae9d29.png)
 
-
 <br>
 
 # USER MODE 😄
+
+## User Dashboard
+
+![image](https://user-images.githubusercontent.com/43011442/130584040-68056f87-05e4-4586-9e78-f1d1d130b1aa.png)
+
+
+
+
+
+
+
+
+
+
 
 <br>
 
