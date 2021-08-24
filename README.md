@@ -340,21 +340,23 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ![image](https://user-images.githubusercontent.com/43011442/130585987-6778b346-4c26-46a1-832e-46fee271d0bb.png)
 ![image](https://user-images.githubusercontent.com/43011442/130586023-19c13a70-d911-4b37-a169-a1593d255f1c.png)
-![image](https://user-images.githubusercontent.com/43011442/130586117-be18c9f6-ab08-43e0-8ae7-4d0be0100b50.png)
+![image](https://user-images.githubusercontent.com/43011442/130588021-4d2203cf-32a0-47f0-8245-1f8abaa2cd09.png)
 ![image](https://user-images.githubusercontent.com/43011442/130586142-728e909b-6e83-40e6-81f1-938ebcd04dea.png)
 ![image](https://user-images.githubusercontent.com/43011442/130586171-4d89ee22-73a9-4641-ae6e-608f87cdbc54.png)
 ![image](https://user-images.githubusercontent.com/43011442/130586204-87403ae0-c5ce-4575-b315-b990d0f2be6d.png)
 ![image](https://user-images.githubusercontent.com/43011442/130586234-392e0e2a-f8b3-4cfb-a2b7-90e3c6ac1191.png)
+![image](https://user-images.githubusercontent.com/43011442/130588070-41fb5ba1-4b9f-4677-a074-6129b6102e69.png)
 
 ## (Course without Chapters)
 
 ![image](https://user-images.githubusercontent.com/43011442/130585480-3bccfd7d-cb8a-48b9-bb05-8aaeebf87c25.png)
 ![image](https://user-images.githubusercontent.com/43011442/130585531-a2fd5451-52b5-4ac7-a589-f10b0aa61551.png)
-![image](https://user-images.githubusercontent.com/43011442/130585580-4287fc5a-87c5-4e23-8b1c-136aca340e4c.png)
+![image](https://user-images.githubusercontent.com/43011442/130588144-1be376d9-14b6-478d-b83a-4662a005e75d.png)
 ![image](https://user-images.githubusercontent.com/43011442/130585660-0551ada3-1fa1-4b09-94a1-c779de62cbda.png)
 ![image](https://user-images.githubusercontent.com/43011442/130585710-021243bd-d345-4528-b859-8f8c1e303dec.png)
 ![image](https://user-images.githubusercontent.com/43011442/130585749-c7fc2af4-d0d8-43d2-9671-d6619fb6b5c1.png)
 ![image](https://user-images.githubusercontent.com/43011442/130585793-430118b8-f61a-4f80-a714-54ebb63fb6c6.png)
+![image](https://user-images.githubusercontent.com/43011442/130588080-1baf5897-1aba-4d17-8e67-1a1be464ba84.png)
 
 ## User - My Learnings
 
