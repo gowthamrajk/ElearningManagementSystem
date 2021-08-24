@@ -255,6 +255,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Professor Current Learning
 
+![image](https://user-images.githubusercontent.com/43011442/130582095-a98f2a72-98ae-41be-b661-bab4e2aacffa.png)
 
 
 
