@@ -233,6 +233,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Edit Professor Profile
 
 ![image](https://user-images.githubusercontent.com/43011442/130581192-d4c593d1-0f3d-4e66-9ce1-fe3d1ffc3a5c.png)
+![image](https://user-images.githubusercontent.com/43011442/130581247-01a94d8a-8227-439c-93e6-e2814acf95e5.png)
 
 <br>
 
