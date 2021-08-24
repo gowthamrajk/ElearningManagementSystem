@@ -321,12 +321,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/130584886-eaa53164-bcdc-49b6-a1e2-379f0529dddc.png)
 ![image](https://user-images.githubusercontent.com/43011442/130584927-e4dc34a9-10ec-4100-9ee3-b67616b29eb1.png)
 
+## Course Enrollment Greetings
+
+![image](https://user-images.githubusercontent.com/43011442/130585271-d035e086-07ee-4831-ac29-a8319676ff9a.png)
+![image](https://user-images.githubusercontent.com/43011442/130585312-81247431-d031-4d73-b5e0-0bff7e801c2a.png)
+
 ## Website Course Overview
 
 ![image](https://user-images.githubusercontent.com/43011442/130585049-eff4c2cf-9192-4b67-89f6-60be06ea69df.png)
 ![image](https://user-images.githubusercontent.com/43011442/130585087-40b139aa-330a-484d-a681-e63202dfd7c3.png)
-
-
 
 
 
