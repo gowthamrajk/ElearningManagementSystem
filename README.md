@@ -157,6 +157,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/130577509-13fd5da6-0a64-4814-9f9c-1fefb8a2c6ca.png)
 ![image](https://user-images.githubusercontent.com/43011442/130577557-37246f85-7e49-410e-b545-10a802cf2681.png)
 
+## Add New Professor
+
 
 # PROFESSOR MODE ❤️
 
