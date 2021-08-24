@@ -306,6 +306,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/130584316-8fefd5af-8a5b-45e7-9172-e49258389d66.png)
 ![image](https://user-images.githubusercontent.com/43011442/130584342-5b79fe3c-7e47-465d-a23a-3ca1a2ae5ed5.png)
 
+![image](https://user-images.githubusercontent.com/43011442/130584391-49962fbd-d9a9-4d70-a333-cf96bc478019.png)
+![image](https://user-images.githubusercontent.com/43011442/130584424-813bae74-41c9-4f93-b546-ee357c83fe51.png)
+
 
 
 
