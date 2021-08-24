@@ -250,6 +250,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Add New Chapters
 
 ![image](https://user-images.githubusercontent.com/43011442/130581824-2887c851-a72e-4da4-990c-0ed242de383a.png)
+![image](https://user-images.githubusercontent.com/43011442/130581891-170d2b8b-f35e-43ec-95f9-36d07d41f0d9.png)
 
 
 
