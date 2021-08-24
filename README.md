@@ -134,18 +134,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/130416298-f5edaa3f-5480-46fe-bec2-dea7f08b80e4.png)
 ![image](https://user-images.githubusercontent.com/43011442/130416371-e9204348-1526-428f-b056-5bf1c68dbe0e.png)
 
-## LOGIN page
-
-![image](https://user-images.githubusercontent.com/43011442/130416646-f7e2e4c2-902a-4577-b553-b62a84767530.png)
-![image](https://user-images.githubusercontent.com/43011442/130416718-b9c039e2-cc3f-4685-ba3c-aaced8af1748.png)
-![image](https://user-images.githubusercontent.com/43011442/130416780-0ae30b7e-2cf0-4366-b169-b7bff9fe1a6f.png)
-
 ## REGISTRATION page
 
 ![image](https://user-images.githubusercontent.com/43011442/130416901-cca34a54-c119-42dc-906c-75949fd07514.png)
 ![image](https://user-images.githubusercontent.com/43011442/130416978-adea203c-a995-4987-844a-05bbf78a96e8.png)
 ![image](https://user-images.githubusercontent.com/43011442/130577024-c4267620-d732-4f73-bd49-6917a562da2a.png)
 
+## LOGIN page
+
+![image](https://user-images.githubusercontent.com/43011442/130416646-f7e2e4c2-902a-4577-b553-b62a84767530.png)
+![image](https://user-images.githubusercontent.com/43011442/130416718-b9c039e2-cc3f-4685-ba3c-aaced8af1748.png)
+![image](https://user-images.githubusercontent.com/43011442/130416780-0ae30b7e-2cf0-4366-b169-b7bff9fe1a6f.png)
 
 # ADMIN MODE: 📫
 
