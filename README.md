@@ -242,6 +242,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ![image](https://user-images.githubusercontent.com/43011442/130581461-0032e45e-c659-41f5-b9cb-872a810805d2.png)
 
+## Add New Course
+
+
 <br>
 
 # USER MODE 😄
