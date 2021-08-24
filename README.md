@@ -202,6 +202,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Total Wishlist Courses
 
+![image](https://user-images.githubusercontent.com/43011442/130579906-936b65ca-c901-4a67-871f-b35e6070746e.png)
 
 # PROFESSOR MODE ❤️
 
