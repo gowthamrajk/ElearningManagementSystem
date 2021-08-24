@@ -164,6 +164,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Add New Course
 
+![image](https://user-images.githubusercontent.com/43011442/130577875-4f2a244c-e5c5-4765-a9df-e08b2ea18635.png)
 
 
 # PROFESSOR MODE ❤️
