@@ -134,10 +134,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/130416298-f5edaa3f-5480-46fe-bec2-dea7f08b80e4.png)
 ![image](https://user-images.githubusercontent.com/43011442/130416371-e9204348-1526-428f-b056-5bf1c68dbe0e.png)
 
-## REGISTRATION page
+## NEW USER REGISTRATION page
 
 ![image](https://user-images.githubusercontent.com/43011442/130416901-cca34a54-c119-42dc-906c-75949fd07514.png)
 ![image](https://user-images.githubusercontent.com/43011442/130416978-adea203c-a995-4987-844a-05bbf78a96e8.png)
+
+## Registration success
+
 ![image](https://user-images.githubusercontent.com/43011442/130577024-c4267620-d732-4f73-bd49-6917a562da2a.png)
 
 ## LOGIN page
