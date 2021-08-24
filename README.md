@@ -274,6 +274,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Youtube Course Overview
 
 ![image](https://user-images.githubusercontent.com/43011442/130583120-cbe3d194-6138-48cd-8c25-4235ee6255b3.png)
+![image](https://user-images.githubusercontent.com/43011442/130583197-d872f13e-5650-43aa-a335-3186820d3ab3.png)
 
 
 
