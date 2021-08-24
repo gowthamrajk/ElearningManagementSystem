@@ -224,6 +224,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Professor Dashboard
 
+![image](https://user-images.githubusercontent.com/43011442/130580880-e6297597-2cf1-40c4-9e96-c3a3fd57fd8e.png)
 
 
 
