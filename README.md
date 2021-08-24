@@ -162,6 +162,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/130577661-d19eb9fb-4082-4405-9b39-ec2c76672ceb.png)
 ![image](https://user-images.githubusercontent.com/43011442/130577752-6cf713ff-5c2c-460b-a1bd-27b864b8dc56.png)
 
+## Add New Course
+
+
+
 # PROFESSOR MODE ❤️
 
 # USER MODE 😄
