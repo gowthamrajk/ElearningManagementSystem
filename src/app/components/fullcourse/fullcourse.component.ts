@@ -16,7 +16,7 @@ const FileSaver = require('file-saver');
 })
 export class FullcourseComponent implements OnInit {
 
-  video = 'Ejzi8XbNbcY';
+  video = 'P2wNzig_SLA';
   courseName = 'springboot';
   chapterlist : Observable<Chapter[]> | undefined;
   courselist : Observable<Course[]> | undefined;
